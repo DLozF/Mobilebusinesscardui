@@ -5,7 +5,6 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   // Add your base path here. 
-  // IMPORTANT: If your GitHub repo name is NOT "mobilebusinesscardui", change it here!
   base: '/mobilebusinesscardui/',
 
   plugins: [
