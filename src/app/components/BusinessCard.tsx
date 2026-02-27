@@ -4,18 +4,15 @@ export function BusinessCard() {
   const skills = ['C++', 'Web Dev', 'Linux', 'Python', 'React', 'Data Structures'];
 
   const handleResumeClick = () => {
-    // This would link to the actual PDF in a real implementation
-    console.log('Opening resume PDF...');
+    window.open('/resume.pdf', '_blank');
   };
 
   const handleGitHubClick = () => {
-    // This would link to the GitHub profile
-    console.log('Opening GitHub profile...');
+    window.open('https://github.com/DLozF', '_blank');
   };
 
   const handleLinkedInClick = () => {
-    // This would link to the LinkedIn profile
-    console.log('Opening LinkedIn profile...');
+    window.open('https://www.linkedin.com/in/diego-lozano-flores-/', '_blank');
   };
 
   return (
