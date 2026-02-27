@@ -3,18 +3,6 @@ import { Phone, Mail, FileText, Github, Linkedin } from 'lucide-react';
 export function BusinessCard() {
   const skills = ['C++', 'Web Dev', 'Linux', 'Python', 'React', 'Data Structures'];
 
-  const handleResumeClick = () => {
-    window.open('/Mobilebusinesscardui/resume.pdf', '_blank');
-  };
-
-  const handleGitHubClick = () => {
-    window.open('https://github.com/DLozF', '_blank');
-  };
-
-  const handleLinkedInClick = () => {
-    window.open('https://www.linkedin.com/in/diego-lozano-flores-/', '_blank');
-  };
-
   return (
     <div className="min-h-screen flex items-center justify-center p-6 relative overflow-hidden" style={{ backgroundColor: '#121212' }}>
       {/* Subtle Noise Texture Overlay */}
@@ -76,11 +64,13 @@ export function BusinessCard() {
           </a>
         </div>
 
-        {/* Middle Section - Buttons */}
+        {/* Middle Section - Links */}
         <div className="flex flex-col gap-4 mb-10">
           {/* Primary CTA - Resume */}
-          <button
-            onClick={handleResumeClick}
+          <a
+            href="/resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
             className="relative w-full py-4 px-6 rounded-2xl bg-blue-600 text-white font-semibold text-base flex items-center justify-center gap-3 transition-all hover:bg-blue-500 active:scale-[0.98] overflow-hidden group"
             style={{
               boxShadow: '0 0 30px rgba(59, 130, 246, 0.4), 0 4px 16px rgba(0, 0, 0, 0.3)',
@@ -89,11 +79,13 @@ export function BusinessCard() {
             <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-blue-600 opacity-0 group-hover:opacity-100 transition-opacity" />
             <FileText className="w-5 h-5 relative z-10" />
             <span className="relative z-10">View Resume (PDF)</span>
-          </button>
+          </a>
 
-          {/* Glassmorphism Button - GitHub */}
-          <button
-            onClick={handleGitHubClick}
+          {/* Glassmorphism Link - GitHub */}
+          <a
+            href="https://github.com/DLozF"
+            target="_blank"
+            rel="noopener noreferrer"
             className="relative w-full py-4 px-6 rounded-2xl font-semibold text-base flex items-center justify-center gap-3 transition-all hover:bg-white/[0.03] active:scale-[0.98] overflow-hidden group"
             style={{
               backgroundColor: 'rgba(255, 255, 255, 0.015)',
@@ -105,11 +97,13 @@ export function BusinessCard() {
           >
             <Github className="w-5 h-5" />
             <span>GitHub</span>
-          </button>
+          </a>
 
-          {/* Glassmorphism Button - LinkedIn */}
-          <button
-            onClick={handleLinkedInClick}
+          {/* Glassmorphism Link - LinkedIn */}
+          <a
+            href="https://www.linkedin.com/in/diego-lozano-flores-/"
+            target="_blank"
+            rel="noopener noreferrer"
             className="relative w-full py-4 px-6 rounded-2xl font-semibold text-base flex items-center justify-center gap-3 transition-all hover:bg-white/[0.03] active:scale-[0.98] overflow-hidden group"
             style={{
               backgroundColor: 'rgba(255, 255, 255, 0.015)',
@@ -121,7 +115,7 @@ export function BusinessCard() {
           >
             <Linkedin className="w-5 h-5" />
             <span>LinkedIn</span>
-          </button>
+          </a>
         </div>
 
         {/* Bottom Section - Skills */}
