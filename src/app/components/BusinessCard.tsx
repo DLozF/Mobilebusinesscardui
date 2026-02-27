@@ -4,7 +4,7 @@ export function BusinessCard() {
   const skills = ['C++', 'Web Dev', 'Linux', 'Python', 'React', 'Data Structures'];
 
   const handleResumeClick = () => {
-    window.open('/resume.pdf', '_blank');
+    window.open('/Mobilebusinesscardui/resume.pdf', '_blank');
   };
 
   const handleGitHubClick = () => {
