@@ -68,7 +68,7 @@ export function BusinessCard() {
         <div className="flex flex-col gap-4 mb-10">
           {/* Primary CTA - Resume */}
           <a
-            href="/resume.pdf"
+            href="/Mobilebusinesscardui/resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="relative w-full py-4 px-6 rounded-2xl bg-blue-600 text-white font-semibold text-base flex items-center justify-center gap-3 transition-all hover:bg-blue-500 active:scale-[0.98] overflow-hidden group"
